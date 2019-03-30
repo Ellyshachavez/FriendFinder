@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.text());
 
-require('./app/routing/apiRoutes.js')(app);
-require('./app/routing/htmlRoutes.js')(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // Starts the server to begin listening / Dynamically Assigned or Static
-
+// =============================================================
 app.listen(process.env.PORT || PORT, function () {
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
