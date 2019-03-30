@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var fs = require("fs");
 
 // Sets up the Express App
 // process.env.PORT lets the port be set by Heroku
