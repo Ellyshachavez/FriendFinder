@@ -17,8 +17,7 @@ app.use(bodyParser.text());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
-// Starts the server to begin listening / Dynamically Assigned or Static
-// =============================================================
-app.listen(process.env.PORT || PORT, function () {
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+  });
+  

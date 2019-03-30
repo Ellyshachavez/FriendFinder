@@ -1,15 +1,16 @@
 // Dependencies
-var friends = require('./../data/friends');
+var friends = require("../data/friends.js");
 
-// ROUTING
-//  API GET request will display friends when the user visits the page.
-module.exports = function (app) {
-  app.get('/api/friends', function (req, res) {
-    res.json(friends);
-  });
+module.exports = function(app) {
+  
+    app.get("/api/friends", function (req, res) {
+      res.json(friends);
+    });
+  
+
 
   // API POST request submit survey data into our friends.js friendsArray.
-  app.post('/api/friends', function (req, res) {
+  app.post("/api/friends", function (req, res) {
 
     var bestMatch = {
       name: "",
