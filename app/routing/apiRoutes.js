@@ -1,5 +1,5 @@
 // Dependencies
-var friends = require('../data/friends.js');
+var friends = require('../data/friends');
 
 // ROUTING
 //  API GET request displays friends when the user visits the page.
